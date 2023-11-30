@@ -1,0 +1,72 @@
+.bg{
+    background-image: url(../icons);
+    /* background-position: center; */
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.background-container {
+    width: 200px;
+    height: 200px;
+    background-image: url('../icons/roundball.png');
+    background-size: cover;
+    animation: rotateBackground 7s linear infinite; /* Change duration or animation type as needed */
+  }
+  
+  @keyframes rotateBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .tracking-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .tracking-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+  }
+  
+  .step-number {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    line-height: 30px;
+    margin: 0 auto 10px;
+  }
+  
+  .step-label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .done .step-number {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  
+  .active .step-number {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .tracking-line {
+    flex: 1;
+    height: 2px;
+    background-color: #ccc;
+  }
+  
+
